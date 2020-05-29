@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <app-productlist [products]="products" (selectionChanged)="handleSelectionChange($event)"></app-productlist>
+      </div>
+      <div class="col-sm">
+        <app-productdetails *ngIf="selectedProduct" [product]="selectedProduct" ></app-productdetails>
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+    </div>
+  </div>
+  
+  
+  
